@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario De Contato </title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+	<body>
+		<div class="form">
+			<form name="entrar" action="enter.php" method="POST">
+
+				<label for="nome">Nome:</label>
+				<br>
+				<input type="text" name="nome" placeholder="" required="">
+				<br><br>
+
+				<label for="senha">Senha:</label>
+				<br>
+				<input type="password" name="senha" placeholder="" required="">
+				<br><br>
+
+				<input type="submit" name="Entrar" value="Entrar">
+				<br>
+				<input type="submit" name="CriarConta" value="Criar conta" onclick="window.location='register.html'">
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+.form{
+	/* Centraliza o formulario no meio da tela */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* Move o formulario para ficar centralizado, pois só fazendo os processos acima
+	   não centraliza o formulario, porque ele fica no meio da tela em relação segundo
+	   a suas cordenadas que ficam no canto superios esquerdo, então tem que tirar 50%
+	   do seu tamanho pra ficar bem no meio, os números não são 50%, porque se
+	   não, não fica no meio
+	*/
+	transform: translate(-54%, -58%);
+
+	/* Distancia da borda */
+	padding-left: 20px;
+	padding-top: 15px;
+	/* Faz a borda do formulário ficar aredondada */
+	border-radius: 20px;
+}
+
+/* Deixa os campos de entrada de dados mais bonitos */
+input[type=text],[type=email], [type="password"]{
+	width: 170px;
+	height: 25px;
+	border-radius: 10px;
+	color: #180050;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+/* Alguns atributos são diferentes nos dois botões por isso que estão separados */
+input[name="Entrar"]{
+	background-color: #5879F9;
+	color: #FFFFFF;
+	width: 170px;
+}
+input[name="CriarConta"]{
+	background-color: #88FA58;
+	color: #FFFFFF;
+	left: -50%;
+	transform: translate(85%, 50%);
+	color: #FFFFFF;
+	width: 130px;
+}
+input[name="Cadastra"]{
+	background-color: #5879F9;
+	color: #FFFFFF;
+	width: 170px;
+}
+
+/* Todos os atributos que são aplicados aos dois botões ficam aqui*/
+input[type=submit]{
+	position: relative;
+	height: 35px;
+	border-radius: 12px;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+/* As letras que ficam em cima dos campos de preenchimento */
+label{
+	margin: 11px 20px 0 0;
+	font-size: 20px;
+	color: #7E7397;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+/* Imagen de fundo do jogo */
+body {
+	background-image: url(assest/Background.jpg);
+	background-size: cover;
+}
